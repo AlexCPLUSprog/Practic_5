@@ -7,7 +7,7 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	int n = 3;
 	book* arr_book = new book[n];
-	book* arr_book2 = new book[n]{};
+	
 
 	arr_book[0] = { "Метро 2033", "Дмитрий Глуховский", 2005, 650, 499 };
 	arr_book[1] = { "Сердце Пармы", "Алексей Иванов", 2000, 610, 249 };
@@ -20,9 +20,11 @@ int main() {
 		std::cout << "Автор " << i + 1 << " книги: " << author_name(arr_book[i]) << "\n";
 
 	save_book(arr_book[1], "file.txt");
+	std::cout << endl;
 
-	//add_book(arr_book2[0], n);
+	add_book(arr_book, n);
 
+	clear_arr(arr_book, n);
 
 	return 0;
 }

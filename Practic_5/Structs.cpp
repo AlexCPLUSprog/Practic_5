@@ -18,6 +18,7 @@ std::string author_name(book& A) {
 
 void clear_arr(book* C, int size) {
 	delete[] C;
+	std::cout << "ћассив очищен!\n";
 }
 
 void save_book(book& S, std::string path) {
@@ -35,7 +36,7 @@ void save_book(book& S, std::string path) {
 		out.close();
 }
 
-/*void add_book(book* D, const int length) {
+void add_book(book* D, const int length) {
 	book* tmp = new book[length + 1]{};
 	for (int i = 0; i < length; i++)
 		tmp[i] = D[i];
@@ -46,9 +47,9 @@ void save_book(book& S, std::string path) {
 	std::cout << "¬ведите фамилию и им€ автора -> ";
 	getline(std::cin, D[length].author);
 	std::cout << "¬ведите год публикации книги -> ";
-	std::cin, D[length].year_publish;
+	std::cin >> D[length].year_publish;
 	std::cout << "¬ведите количество страниц -> ";
-	std::cin, D[length].pages;
+	std::cin >> D[length].pages;
 	std::cout << "¬ведите цену за экземпл€р -> ";
-	std::cin, D[length].price;
-}*/
+	std::cin >> D[length].price;
+}

@@ -20,4 +20,4 @@ void save_book(book& S, std::string path);
 
 void clear_arr(book* C, int size);
 
-//void add_book(book* D, const int length);
+void add_book(book* D, const int length);
