@@ -18,7 +18,7 @@ std::string author_name(book& A) {
 
 void clear_arr(book* C, int size) {
 	delete[] C;
-	std::cout << "Массив очищен!\n";
+	std::cout << "\nМассив очищен!\n";
 }
 
 void save_book(book& S, std::string path) {
@@ -42,7 +42,7 @@ void add_book(book* D, const int length) {
 		tmp[i] = D[i];
 	delete[] D;
 	D = tmp;
-	std::cout << "Введите имя книги -> ";
+	std::cout << "\nВведите имя книги -> ";
 	getline(std::cin, D[length].name_book);
 	std::cout << "Введите фамилию и имя автора -> ";
 	getline(std::cin, D[length].author);
